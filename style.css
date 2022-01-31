@@ -52,7 +52,7 @@ p {
         height: 377px;
         z-index: 0;
         overflow: scroll;
-        margin-top: 1px;
+        margin-top: 1em;
     }
 
     .forms {
@@ -77,3 +77,10 @@ p {
     }
 }
 
+@media screen and (min-width:992px) {
+    .coffees {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+}

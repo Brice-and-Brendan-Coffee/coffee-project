@@ -22,7 +22,7 @@ function addCoffee(event) {
 }
 
 function renderCoffee(coffee) {
-    var html = '<div class="coffee">';
+    var html = '<div class="coffee col-12 col-lg-6">';
     html += '<h2>' + coffee.name + '</h2>';
     html += '<p>' + coffee.roast + '</p>';
     html += '</div>';
@@ -99,3 +99,4 @@ tbody.innerHTML = renderCoffees(coffees);
 submitSearchButton.addEventListener('click', updateCoffees);
 coffeeSearch.addEventListener('keyup', updateCoffeesSearch);
 submitAddButton.addEventListener('click', addCoffee);
+roastSelection.addEventListener('change', updateCoffees);
