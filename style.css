@@ -1,9 +1,79 @@
-table {
-    border-collapse: collapse;
-    margin: 15px 0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-td, th {
-    border: 1px solid black;
-    padding: 5px 10px;
+.container-fluid {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
 }
+
+.title {
+    width: 80%;
+    border-bottom: 1px solid lightgrey;
+}
+
+.btn {
+    margin-top: 1em;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    color: darkgray;
+}
+
+.coffee {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin-top: .5em;
+}
+
+.coffee>h2{
+    margin-bottom: 0;
+    margin-right: .3em;
+}
+
+.coffee>p{
+    margin-bottom: .1em;
+}
+
+@media screen and (max-width:767px) {
+    .title {
+        margin-bottom: 0;
+    }
+
+    .coffees {
+        height: 377px;
+        z-index: 0;
+        overflow: scroll;
+        margin-top: 1px;
+    }
+
+    .forms {
+        height: 33%;
+        position: fixed;
+        bottom: 0;
+        z-index: 1;
+        background-color: white;
+        border-top: 1px solid lightgrey;
+        padding: .5em 1em;
+        overflow: auto;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .container-fluid {
+        margin: 0;
+        padding: .2em 2em 1em;
+    }
+    .title {
+        padding-bottom: .1em;
+    }
+}
+

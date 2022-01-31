@@ -10,40 +10,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container row">
-        <h1 class="col-12">Coffee!</h1>
+    <div class="container-fluid row">
+        <h1 class="col-10 offset-1 title">Coffee!</h1>
 
-        <div class="coffees col-6">
+        <div class="coffees col-12 col-md-6">
         </div>
 
-        <div class="col-6">
-            <form>
-                <label for="roast-selection"></label>
-                <select id="roast-selection">
+        <div class="col-12 col-md-6 forms">
+            <form class="row">
+                <label for="roast-selection"><strong>Roast:</strong></label>
+                <select id="roast-selection" class="form-control col-12">
                     <option>all</option>
                     <option>light</option>
                     <option>medium</option>
                     <option>dark</option>
                 </select>
 
-                <label for="coffee-search"></label>
-                <input type="text" name="coffee-search" id="coffee-search" placeholder="">
+                <label for="coffee-search"><strong>Name:</strong></label>
+                <input type="text" name="coffee-search" id="coffee-search" class="form-control col-12" placeholder="">
 
-                <input id="submit-search" type="submit" />
+                <input id="submit-search" type="submit" class="btn btn-primary col-12"/>
             </form>
 
-            <form>
-                <label for="add-coffee-roast"></label>
-                <select id="add-coffee-roast">
+            <hr>
+
+            <h1>Add a Coffee</h1>
+
+            <form class="row">
+                <label for="add-coffee-roast"><strong>Roast:</strong></label>
+                <select id="add-coffee-roast" class="form-control col-12">
                     <option>light</option>
                     <option>medium</option>
                     <option>dark</option>
                 </select>
 
-                <label for="add-coffee-name"></label>
-                <input type="text" name="add-coffee-name" id="add-coffee-name" placeholder="">
+                <label for="add-coffee-name"><strong>Name:</strong></label>
+                <input type="text" name="add-coffee-name" id="add-coffee-name" class="form-control col-12" placeholder="">
 
-                <input id="submit-add" type="submit" />
+                <input id="submit-add" type="submit" class="btn btn-primary col-12"/>
             </form>
         </div>
     </div>
